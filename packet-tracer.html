@@ -96,18 +96,28 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>Simulazione Ambiente di Rete azindale con tecnica di sicurezza ACL</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Dettagli dell'esercitazione </h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                L'obiettivo principale di questa prova era acquisire familiarità con la configurazione di una rete aziendale, utilizzando dispositivi di rete e implementando tecniche di sicurezza come le ACL (Access Control Lists).
+                <p></p>
+                Per prima cosa, ho riproposto una delle esercitazioni svolte, creando un'infrastruttura di rete aziendale composta da tre piani distinti, ognuno con un numero specifico di host.
+                <p></p>
+Ho poi assegnato una VLAN separata a ciascun piano: Piano Terra (VLAN 10), Piano 1 (VLAN 20) e Piano 3 (VLAN 30).
+<p></p>
+ Per garantire la ridondanza e una connettività stabile, ho collegato gli switch tra di loro.
+<p></p>
+Al fine di consentire a tutti i computer di accedere al sito web interno dell'azienda, ho adottato la tecnica del "router on a stick". Ho configurato il router con sottointerfacce di rete corrispondenti a ciascuna VLAN e ho abilitato il traffico tra di esse.
+<p></p>
+Successivamente, ho collegato un server simulato chiamato CloudPT al router, che rappresentava la connessione con Internet. Tuttavia, per garantire la sicurezza della rete, ho implementato una ACL sul router per impedire al CloudPT di inviare pacchetti ad altre interfacce di rete.
+<p></p>
+L'ACL è stata configurata in modo tale da bloccare i pacchetti provenienti dalla rete del CloudPT, agendo come indirizzo sorgente, per evitare che potenziali minacce dalla rete esterna si propagassero attraverso la rete interna aziendale.
+<p></p>
+Questa misura aggiuntiva di sicurezza aiuta a proteggere la rete dagli accessi indesiderati e dai potenziali attacchi provenienti dal CloudPT.
               </p>
             </div>
           </div>
