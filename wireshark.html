@@ -96,18 +96,26 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>Analisi di rete</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Descrizione del progetto svolto</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Per la realizzazione di questo progetto è stato utilizzato il software applicativo Wireshark, uno strumento di analisi del traffico di rete che cattura e analizza i pacchetti di dati per la diagnosi dei problemi di rete e l'individuazione delle violazioni di sicurezza.
+                La prova coniste nell'effettuare un analisi di rete, Analizzando il traffico HTTP, è stata individuata una richiesta GET contenente un file .exe potenzialmente pericoloso denominato f4.exe. Al fine di valutare l'integrità del file, è possibile eseguire il download seguendo il flusso TCP del pacchetto.
+                Nella prima immagini sono presenti le richieste inviate dall'indirizzo IP della vittima e nella seconda foto la risposta degli IP contattati.
+                Nella terza immagine vengono mostrati i dns contattati.
+              </p></p>
+                In conclusione, ci avvaliamo della possibilità di analizzare il presunto pacchetto infetto, una volta individuato il file, è possibile procedere al controllo dell'hash tramite Virus Total utilizzando quindi un software specifico oppure attraverso il seguente comando:
+              </p></p>
+                $ sha1sum [file path]
+              </p></p>
+                La verifica tramite hash rappresenta il metodo più rapido, ma meno completo, poiché è più veloce confrontare l'hash anziché caricare il file e attendere una diagnosi dall'antivirus del sito, tuttavia quest'ultimo metodo è più preciso e completo.
+                Al termine dell'analisi possiamo estrapolare un report incidente, che ci include tutto il comportamento e la natura del file in questione, ovvero un trojan.
+                
+                
               </p>
             </div>
           </div>
